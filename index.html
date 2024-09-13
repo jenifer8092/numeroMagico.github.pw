@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juego del Número Mágico</title>
+  <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Juego del Número Mágico</h1>
+    <p>Adivina un número entre 1 y 100 en 10 intentos.</p>
+    
+    <div id="game-container">
+      <label for="guess">Ingresa tu número pensado:</label>
+      <input type="number" id="guess" min="1" max="100">
+      <button id="submitGuess">Enviar</button>
+
+      <p id="feedback"></p>
+      <p>Intentos restantes: <span id="remaining">10</span></p>
+      <p>Intentos anteriores: <span id="previousGuesses"></span></p>
+    </div>
+
+    <button id="restart" style="display: none;">Jugar de nuevo</button>
+  </div>
+
+  <div class="tabla">
+    <h2>Top 5 mejores adivinanzas:</h2>
+    
+    <div id="results-container">
+      
+
+    </div>
+  </div>
+
+  <div class="tabla2">
+    <h2>Top 5 mejores tiempos</h2>
+  </div>
+
+  <script src="./script/script.js"></script>
+</body>
+</html>
